@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Country Game</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Include Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Guess the Country</h1>
+    <button class="circular-button" onclick="shuffle()" disabled>Shuffle</button>
+    <div id="randomcN">Let's Start</div>
+    <button class="answer" onclick="showAnswer()">Give Up?</button>
+
+    <div id="map"></div>
+    <div id="ans">Shuffle to Start!!!</div>
+    
+   <div class="container-count">
+      <div class="timer" id="timer">Time: 01:00</div>
+      <div id="randomcN"></div>
+      <div id="ans"></div>
+      <ul id="hist"></ul>
+      <div id="winCounter">Wins: 0</div>
+      <div id="loseCounter">Losses: 0</div>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
